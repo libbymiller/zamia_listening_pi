@@ -4,6 +4,7 @@ Zamia a a version of Kaldi - speech to text
 This is a how-to for making it work on a pi 3
 I used python 2.7 - not tried with python 3 yet.
 To make it work it really needs a good microphone.
+I used a respeaker 4 mic https://www.seeedstudio.com/ReSpeaker-4-Mic-Array-for-Raspberry-Pi.html
 
 http://goofy.zamia.org/
 
