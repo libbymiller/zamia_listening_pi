@@ -75,6 +75,14 @@ check this there:
     wget 'http://goofy.zamia.org/zamia-speech/misc/kaldi_decode_live.py'
 
     python kaldi_decode_live.py
+    
+If it crashes with `terminate called after throwing an instance of 'std::bad_alloc'` or similar, try increasing the swap size.
+
+    /etc/dphys-swapfile
+
+to e.g.
+
+    CONF_SWAPSIZE=1000
 
 # 'Fix'? the VAD (it's a tiny change, but doesn't work without it)
 
