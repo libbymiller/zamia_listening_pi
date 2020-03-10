@@ -1,12 +1,10 @@
 # Zamia on a Pi 3
 
-Zamia a a version of Kaldi - speech to text
-This is a how-to for making it work on a pi 3
-I used python 2.7 - not tried with python 3 yet.
-To make it work it really needs a good microphone.
-I used a respeaker 4 mic https://www.seeedstudio.com/ReSpeaker-4-Mic-Array-for-Raspberry-Pi.html
+[Zamia](http://goofy.zamia.org/) is a version of Kaldi - speech to text. This is a how-to for making it work on a Raspberry Pi 3.
 
-http://goofy.zamia.org/
+I used python 2.7 - not tried with python 3 yet.
+
+To make it work it really needs a good microphone. I used a [respeaker 4 mic](https://www.seeedstudio.com/ReSpeaker-4-Mic-Array-for-Raspberry-Pi.html). 
 
 # Install Zamia
 
@@ -75,6 +73,14 @@ check this there:
     wget 'http://goofy.zamia.org/zamia-speech/misc/kaldi_decode_live.py'
 
     python kaldi_decode_live.py
+    
+If it crashes with `terminate called after throwing an instance of 'std::bad_alloc'` or similar, try increasing the swap size.
+
+    /etc/dphys-swapfile
+
+to e.g.
+
+    CONF_SWAPSIZE=1000
 
 # 'Fix'? the VAD (it's a tiny change, but doesn't work without it)
 
