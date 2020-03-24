@@ -68,6 +68,6 @@ fails, mising kaldi libs
 
     make 
 
-still running! not sure if this is what i want.
+update - seems to need 32GB to work...
 
 ....
