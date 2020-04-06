@@ -28,7 +28,7 @@ Dependencies - [from here](https://github.com/alexylem/jarvis/issues/129#issueco
 
 
 goofy.zamia.org used to build the debian packages but can't right now - I've included the ones you 
-need in this repo, apart from kaldi-chain-zamia-speech [which you need to download from dropbox](https://www.dropbox.com/transfer/AAAAADYHFQTdVbYixPNTKhTA-b0yc44nIh3pUPQP9QLjZ9p6YhddQ2w) which is 431MB, and [started some build 
+need in this repo, apart from kaldi-chain-zamia-speech [which you need to download from dropbox](https://www.dropbox.com/transfer/AAAAADYHFQTdVbYixPNTKhTA-b0yc44nIh3pUPQP9QLjZ9p6YhddQ2w) because it's 431MB, and [started some build 
 instructions](https://github.com/libbymiller/zamia_listening_pi/blob/master/notes_on_building_debs.md)
 
     sudo dpkg -i libkaldi-asr_5.4.248-3_armhf.deb
