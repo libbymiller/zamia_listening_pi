@@ -5,14 +5,13 @@ scripts are on his [github](https://github.com/gooofy/zamia-dist) but there are 
 I think you need to build:
 
  * kaldi-chain-zamia-speech-en_20190609-1_armhf.deb
- * libkaldi-asr
- 
-and possibly
- 
+ * libkaldi-asr (not finished)
  * python-kaldiasr (not got that far yet)
+ * python-nltools (not got that far yet)
 
+python-nltools has a load of dependencies: python-espeakng, python-marytts, python-num2words, python-picotts, python-webrtcvad.
+  
 This is extrapolating from [here](https://github.com/libbymiller/zamia_listening_pi/blob/master/README.md) which I got from his [now-outdated docs](https://github.com/gooofy/zamia-speech#get-started-with-our-pre-trained-models) on the zamia github.)
-
 
 # 1. kaldi-chain-zamia-speech-en_20190609-1_armhf.deb
 
