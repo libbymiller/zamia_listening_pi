@@ -6,7 +6,7 @@ I used python 2.7 - not tried with python 3 yet.
 
 To make it work it really needs a good microphone. I used a [respeaker 4 mic](https://www.seeedstudio.com/ReSpeaker-4-Mic-Array-for-Raspberry-Pi.html). 
 
-I used Raspian buster lite.
+I used Raspian Buster lite.
 
 # Clone this directory onto the pi
 
@@ -14,9 +14,11 @@ I used Raspian buster lite.
 
 # Install Zamia
 
+Dependencies
+
     sudo apt-get install zip git libatlas-base-dev cython python-future python-requests python-setproctitle espeak-ng
 
-Dependencies - [from here](https://github.com/alexylem/jarvis/issues/129#issuecomment-248072872)
+More dependencies - [from here](https://github.com/alexylem/jarvis/issues/129#issuecomment-248072872)
 
     curl -O http://ftp.fr.debian.org/debian/pool/non-free/s/svox/libttspico-data_1.0+git20130326-3_all.deb
     curl -O http://ftp.fr.debian.org/debian/pool/non-free/s/svox/libttspico0_1.0+git20130326-3_armhf.deb
@@ -26,8 +28,7 @@ Dependencies - [from here](https://github.com/alexylem/jarvis/issues/129#issueco
     sudo dpkg -i libttspico0_1.0+git20130326-3_armhf.deb
     sudo dpkg -i libttspico-utils_1.0+git20130326-3_armhf.deb
 
-
-goofy.zamia.org used to build the debian packages but can't right now - I've included the ones you 
+<a href="https://twitter.com/Gooofy">Günter Bartsch</a> - who runs [zamia.org](zamia.org), which is where all this work came from - used to build the debian packages but can't right now - I've included the ones you 
 need in this repo, apart from kaldi-chain-zamia-speech [which you need to download from dropbox](https://www.dropbox.com/transfer/AAAAADYHFQTdVbYixPNTKhTA-b0yc44nIh3pUPQP9QLjZ9p6YhddQ2w) because it's 431MB, and [started but not finished some build instructions](https://github.com/libbymiller/zamia_listening_pi/blob/master/notes_on_building_debs.md).
 
     sudo dpkg -i libkaldi-asr_5.4.248-3_armhf.deb
@@ -56,7 +57,7 @@ need in this repo, apart from kaldi-chain-zamia-speech [which you need to downlo
     sudo systemctl start pulseaudio
     sudo systemctl status pulseaudio
 
-# Install respeaker stuff
+# Install respeaker stuff if using it
 
     sudo nano /boot/config.txt
 
@@ -94,7 +95,7 @@ to e.g.
 
     CONF_SWAPSIZE=1000
 
-# 'Fix'? the VAD (it's a tiny change, but doesn't work without it)
+# 'Fix'? the VAD (it's a tiny change, but my code doesn't work without it)
 
     sudo cp vad.py /usr/lib/python2.7/dist-packages/nltools/vad.py
 
