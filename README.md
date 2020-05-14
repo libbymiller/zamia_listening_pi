@@ -43,19 +43,7 @@ need in this repo, apart from kaldi-chain-zamia-speech [which you need to downlo
 
 # Install pulse
 
- This is copied from [Radiodan](https://github.com/andrewn/neue-radio/blob/master/deployment/provision)
-
-    sudo apt-get install pulseaudio -y
-    sudo adduser pi pulse
-    sudo sed -i '/load-module module-native-protocol-unix/c load-module\ module-native-protocol-unix auth-anonymous=1\ socket=/tmp/pulseaudio-system.sock\nload-module module-native-protocol-tcp auth-anonymous=1 auth-ip-acl=127.0.0.1;192.168.178.0/24' /etc/pulse/system.pa
-    sudo mkdir -p /home/pi/.config/pulse/
-    sudo echo "default-server = unix:/tmp/pulseaudio-system.sock" >> /home/pi/.config/pulse/client.conf
-    sudo chown -R pi:pi /home/pi/.config/pulse/
-    sudo cp pulseaudio.service /etc/systemd/system/
-    sudo systemctl enable pulseaudio
-
-    sudo systemctl start pulseaudio
-    sudo systemctl status pulseaudio
+    sudo apt-get install pulseaudio
 
 # Install respeaker stuff if using it
 
