@@ -91,7 +91,9 @@ to e.g.
 
 # Install deps for kaldi_and_move.py
 
-    pip install nltk
+I had trouble wth this last time on python 2 - it can be used without it - it's just being used as a tokeniser
+
+    sudo pip install nltk 
 
 # start it up automatically
 
