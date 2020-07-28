@@ -29,7 +29,7 @@ More dependencies - [from here](https://github.com/alexylem/jarvis/issues/129#is
     sudo dpkg -i libttspico-utils_1.0+git20130326-3_armhf.deb
 
 <a href="https://twitter.com/Gooofy">Günter Bartsch</a> - who runs [zamia.org](zamia.org), which is where all this work came from - used to build the raspian packages but can't right now - I've included the ones you 
-need in this repo, apart from kaldi-chain-zamia-speech [which you need to download from dropbox](https://www.dropbox.com/transfer/AAAAADYHFQTdVbYixPNTKhTA-b0yc44nIh3pUPQP9QLjZ9p6YhddQ2w) because it's 431MB.
+need in this repo, apart from kaldi-chain-zamia-speech [which you need to download from dropbox](https://www.dropbox.com/t/W6xGXz29IF8u468l) because it's 431MB.
 
 (I've also and started but not finished some [build instructions](https://github.com/libbymiller/zamia_listening_pi/blob/master/notes_on_building_debs.md).)
 
